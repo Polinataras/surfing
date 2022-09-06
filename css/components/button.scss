@@ -1,0 +1,38 @@
+.button {
+    font-size: rem(16px);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: rem(21px) rem(41px);
+    border-radius: rem(100px);
+    line-height: 1;
+    border: none;
+
+    &--color--one {
+        background-color: #FEDB3F;
+        color: #000;    
+
+    &:hover {
+        background-color: #000;
+        color: #FEDB3F;
+    }
+}
+
+    &--color--two {
+        background-color:#FFD517;
+        color: #000;    
+
+    &:hover {
+        background-color: #000;
+        color: #FFD517;
+    }
+}
+
+&--color--three {
+    background-color: transparent;
+    color: white;    
+
+&:hover {
+   color: #FFD517;
+}
+}
+}

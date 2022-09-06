@@ -1,0 +1,19 @@
+.interective-avatar {
+    width: rem(84px);
+    height: rem(84px);
+    border: rem(6px) solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+   
+ 
+
+    &:hover {
+        border: rem(6px) solid transparent;
+        border-color: #FEDB3F;
+    }
+}
+
+.interective-avatar.active {        
+        border: rem(6px) solid transparent;
+        border-color: #FEDB3F;
+    }

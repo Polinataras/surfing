@@ -1,0 +1,26 @@
+
+
+.characteristics {
+    display: flex;
+    flex-direction: column;
+    padding: rem(30px);
+
+    &__list {
+        display: flex;
+        margin-bottom: rem(28px);    
+        justify-content: space-between;    
+    }
+
+    &__img {
+        margin-right: rem(16px);
+        width: 24px;
+        height: 24px;
+        
+    }
+
+    &__text {
+        position: absolute;
+        text-align: left;
+        padding-left: rem(35px);
+    }
+}

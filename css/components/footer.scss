@@ -1,0 +1,38 @@
+.container--footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: rem(93px);
+
+    @include phones {
+        flex-direction: column;
+     padding: rem(20px);
+    }
+}
+// .footer {
+//     margin-top: 709px;
+// }
+.footer__inform {
+    @include phones {
+        display: flex;
+        flex-direction: column;
+     align-items: center;
+     margin-bottom: 15px;
+    }
+}
+
+.footer__inform--adress {
+    font-size: rem(21px);
+}
+.section--map {
+     display: flex;
+     flex-direction: column-reverse;
+}
+
+.ymaps-2-1-79-map {
+    height: 702px !important;
+
+    @include phones {
+        height: 675px !important;
+    }
+}
