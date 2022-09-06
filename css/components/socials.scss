@@ -1,0 +1,60 @@
+.socials__list {
+    display: flex;
+}
+
+.socials__item {
+    height: rem(20px);
+    width: rem(20px);
+    margin-right: rem(13px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.socials__icon-svg {    
+   fill: #B3B3B3;
+  width: 100%;
+  height: 100%;
+
+    &:hover {
+        fill: black;
+        transition: 0.5s;
+    }
+   
+}
+/* .socials__item--icon--vk {
+    background: url(../../img/vk.png) center center no-repeat;    
+    background-size: contain; 
+
+    &:hover {
+        background: url(../../img/vk_hover.jpg) center center no-repeat; 
+    }
+}
+
+.socials__item--icon--fb {
+    background: url(../../img/fb.png) center center no-repeat;   
+    background-size: contain;  
+
+    &:hover {
+        background: url(../../img/fb_hover.jpg) center center no-repeat; 
+    }
+}
+.socials__item--icon--inst {
+    background: url(../../img/inst.png) center center no-repeat;   
+    background-size: contain; 
+
+    &:hover {
+        background: url(../../img/inst_hover.jpg) center center no-repeat; 
+        background-size: contain; 
+    }
+}
+.socials__item--icon--tw {
+    background: url(../../img/tw.png) center center no-repeat;    
+    background-size: contain; 
+
+    &:hover {
+        background: url(../../img/tw_hover.jpg) center center no-repeat; 
+    }
+}
+*/

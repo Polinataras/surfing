@@ -1,0 +1,72 @@
+.team--version--desktop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 45px;
+    @include tablets {
+        display: none;
+    }
+}
+
+.team {
+    &__item {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    max-width: rem(220px);
+   // position: relative;
+    }
+    &__member {
+        margin-bottom: 21px;
+    }
+    &__member-icon {
+        
+        min-height: 220px;
+    }
+
+    &__btn {
+        border: none;
+        background-color: inherit;
+        font-weight: 700;
+        font-size: 21px;
+        margin-bottom: 8px;
+        &::after {
+            content: url(../../img/down.svg);
+           margin-left: 5px;           
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        height: 0px;
+       position: absolute;
+      //  top: 100%;
+      transition: height .3s;
+      max-width: 220px;
+      @include srednee {
+        width: 180px;
+      }
+    }
+    &__title {
+        color: black;
+        margin-bottom: 5px;
+    }
+}
+
+.team--version--mobile {
+    display: none;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+}
+}
+.team--version--mobile .team__item {
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+.team--version--mobile .team__content {
+    max-width: 222px;
+    position: relative;
+}
+

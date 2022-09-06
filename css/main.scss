@@ -1,0 +1,49 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+$z-fixwd-menu: 100;
+
+//breakpoint
+$srednee: 1000px;
+$tablets: 768px;
+$phones: 480px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+
+@import "media.scss";
+@import "layout";
+@import "components/hero.scss";
+@import "components/header.scss";
+@import "components/features.scss";
+@import "components/feature.scss";
+@import "components/button.scss";
+@import "components/section.scss";
+@import "components/headline.scss";
+@import "components/benefits.scss";
+@import "components/benefit.scss";
+@import "components/reviews.scss";
+@import "components/interective-avatar.scss";
+@import "components/form.scss";
+@import "components/radio.scss";
+@import "components/fixed-menu.scss";
+@import "components/footer.scss";
+@import "components/socials.scss";
+@import "components/hamburger.scss";
+@import "components/product.scss";
+@import "components/parametri.scss";
+@import "components/characteristics.scss";
+@import "components/overlay.scss";
+@import "components/team_desktop.scss";
+@import "components/modal-form.scss";
+@import "components/player.scss";
+@import "components/products-menu.scss";
+
+
+
+
+
+
+
+
+

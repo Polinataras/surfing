@@ -1,0 +1,50 @@
+.parametri {
+    width: rem(91px);
+    height: rem(91px);
+    background: #3A587E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(52px);
+    position: relative;
+
+    &:hover .parametri__info {
+        display: block;
+    }
+
+    @include tablets {
+        display: none;
+    }
+    
+    &__svg {
+        width: 38px;
+        height: 38px;
+        margin-bottom: rem(7px);
+    }
+    
+    &__text {
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.parametri__info {
+    display: none;
+    width: rem(273px);
+    height: rem(291px);
+    background-color: rgba(0, 0, 0, 0.06);
+
+    
+    //background: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(40px);
+
+    color: black;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    
+}

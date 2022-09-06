@@ -1,0 +1,262 @@
+.container--product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .bx-prev {
+        margin-left: -37px;
+        background: none;
+        background: url(../../img/arrow_left.svg) no-repeat;
+
+        @include srednee {
+            margin-left: -20px;
+        }
+        @include tablets {
+            margin-left: 20px;
+            margin-top: -155px !important;
+        }
+        @include phones {
+            margin-left: 0;
+        }
+    }
+    .bx-next {
+        margin-right: -20px;
+        background: none;
+        background: url(../../img/arrow_right.svg) no-repeat;
+
+       
+        @include tablets {
+            margin-right: 20px;
+            margin-top: -155px !important;
+        }
+        @include phones {
+            margin-right: 0;
+        }
+    }
+    .bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+    background-position: -.5px 0; 
+}
+}
+
+.product {
+   
+    padding-left: rem(62px);
+    @include tablets {
+        padding-left: 0;
+    }
+
+    
+
+    // &-arrows__left {
+    //     background: url(../../img/arrow_left.svg) center center no-repeat;
+    //     background-size: contain;
+    //     display: block;
+    //     width: 14px;
+    //     height: 27px;
+    //     position: absolute;
+    //     top: 37%;
+
+    // }
+    // &-arrows__right {
+    //     background: url(../../img/arrow_right.svg) center center no-repeat;
+    //     background-size: contain;
+    //     display: block;
+    //     width: 14px;
+    //     height: 27px;
+    //     position: absolute;
+    //     top: 37%;
+    //     transform: translateY(-50%);
+
+    // }
+
+    // &-arrows { 
+    //     // width: rem(978px);
+    // max-width: rem(978px);
+    //  display: flex;
+    //  justify-content: space-between;
+    //  align-items: center;
+    //  position: absolute;
+
+    //  &__left {
+    //     margin-right: rem(950px);   
+        
+    //     @include srednee {
+    //         margin-right: 720px;
+    //     }
+
+    //     @include tablets {
+    //         margin-right: 428px;
+    //         margin-top: -279px;
+    //     }
+    //     @include phones {
+    //         margin-right: 343px;
+    //         margin-top: -279px;
+    //     }
+    //  } 
+     
+    //  &__right {      
+
+    //     @include tablets {
+    //         margin-top: -279px;
+    //     }
+    //  }
+
+    //     &__img {
+    //         width: 14px;
+    //         height: 27px;
+
+    //     }
+        
+   // } 
+    
+    &__list {
+        display: flex; 
+        
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    }
+  
+
+    &__icon-img {
+        //width: 100%;
+       min-width: rem(420px);
+       
+
+            @include srednee {
+                max-width: 332px;
+                min-height: 331px;
+            }
+
+            @include tablets {
+                width: 100%;
+                min-width: rem(318px);
+                height: rem(417px);
+            }
+            @include phones {
+                min-width: 252px;
+                min-height: 331px;
+            }
+
+    }
+
+    &__col--right {
+        margin-left: rem(58px);
+        margin-right: rem(30px);
+        flex: 1;
+
+        @include srednee {
+            margin-left: 30px;
+        }
+
+        @include tablets {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+&__info {
+   
+
+    @include tablets {         
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 rem(105px);
+        text-align: center;
+    
+    }
+}
+   
+
+    &__text {
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #292929;
+        margin-bottom: rem(17px);
+
+        @include tablets {
+            font-size: 30px;
+            margin-bottom: rem(14px);
+
+        }
+    }
+
+    &__desc {
+        margin-bottom: rem(24px);
+        line-height: 22px;
+         
+        @include srednee {
+            max-width: 270px;
+        }
+        @include tablets {
+            max-width: 532px;
+        }
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+
+        @include srednee {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include tablets {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &-sum {
+            font-size: 60px;
+            color: #151515;
+            font-style: normal;
+            margin-right: rem(57px);
+            
+            white-space: nowrap;
+           
+           
+        }
+    }
+   
+}
+.arrow__left {
+    width: 14px;
+    height: 27px;
+}
+.arrow__right {
+    width: 14px;
+    height: 27px;
+}
+
+.product-features__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(10px);
+    white-space: nowrap;
+
+    @include tablets {
+        margin-left: rem(80px);
+    }
+   
+}
+
+.product-features__list {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: rem(55px);
+
+    &-value {
+        color: black;
+        font-weight: bold;
+    }
+}
+
