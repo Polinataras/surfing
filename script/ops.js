@@ -44,18 +44,37 @@ const performTransition = (sectionEq) => {
 
 };
 
-const scrollViewport = (direction) => {
+// const scrollViewport = (direction) => {
+//     const activeSection = sections.filter(".activescroll");
+//     const nextSection = activeSection.next();
+//     const prevSection = activeSection.prev();
+
+//     if (direction == "next" && nextSection.length) {
+//         performTransition(nextSection.index());
+//     }
+//     if (direction == "prev" && prevSection.length) {
+//         performTransition(prevSection.index());
+//     }
+// }
+
+const viewportScroller = () => {
     const activeSection = sections.filter(".activescroll");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
-    if (direction == "next" && nextSection.length) {
-        performTransition(nextSection.index());
-    }
-    if (direction == "prev" && prevSection.length) {
-        performTransition(prevSection.index());
-    }
-}
+    return {
+        next() {
+            if (nextSection.length) {
+                perfomTransition(nextSection.index());
+            }
+        },
+        prev() {
+            if (prevSection.length) {
+                perfomTransition(prevSection.index());
+            }
+        },
+    };
+};
 
 $(window).on("wheel", e => {
     //console.log(e);
@@ -109,7 +128,8 @@ $("[data-scroll-to]").click(e => {
 if(isMobile) {
     $("body").swipe( {
      swipe: function(event, direction) {
-      const scroller = viewportScroller();
+    //   const scroller = viewportScroller();
+    const scroller = viewportScroller()
       let scrollDirection = "";
 
       if (direction == "up") scrollDirection = "next";
