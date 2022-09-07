@@ -129,7 +129,7 @@ if(isMobile) {
     $("body").swipe( {
      swipe: function(event, direction) {
     //   const scroller = viewportScroller();
-    const scroller = viewportScroller()
+    const scroller = viewportScroller();
       let scrollDirection = "";
 
       if (direction == "up") scrollDirection = "next";
