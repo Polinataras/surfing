@@ -92,7 +92,7 @@ $(window).on("keydown", e => {
 
 });
 
-$(".wrapper").on("touchmove", e => e.preventDefault())
+$(".wrapper").on("touchmove", e => e.preventDefault());
 
 $("[data-scroll-to]").click(e => {
     e.preventDefault();
